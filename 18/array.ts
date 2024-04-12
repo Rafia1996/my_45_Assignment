@@ -1,0 +1,10 @@
+let countriestovisit : string[]= ["china", "brazil", "denmark", "argentina"];
+console.log("original;", countriestovisit);
+console.log("alpabatical order:", [...countriestovisit].sort());
+console.log("still in original order", countriestovisit);
+console.log("reverseorder", [...countriestovisit].reverse());
+console.log("still in original order", countriestovisit);
+console.log("original array reversed:", countriestovisit.reverse());
+console.log("back to original order", countriestovisit.reverse());
+console.log("sorted in alphabatical array", countriestovisit.sort());
+console.log("original array reverse again", countriestovisit.reverse());

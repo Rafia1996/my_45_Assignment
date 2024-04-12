@@ -1,0 +1,20 @@
+var guestlist = ["rafia", "rida", "yahya", "hira"];
+var dontcome = guestlist[0];
+console.log(dontcome, "nhn aa sakta");
+guestlist.splice(0, 1, "Javed");
+console.log("we found a biggest table for dinner with me!");
+guestlist.unshift("owais");
+guestlist.push("insha emaan");
+var guestlistlenght;
+var middleindex = Math.floor(guestlist.length / 2);
+guestlist.splice(middleindex, 0, "inza emaan");
+guestlist.forEach(function (guest) { return console.log("salam ".concat(guest, " would you like to come")); });
+console.log("unfortunatily , the new table is not arrive only two members is dinner with me");
+while (guestlist.length > 2)
+    ;
+var removedguest = guestlist.pop();
+console.log("sorry , ".concat(removedguest, " i canot invite you"));
+guestlist.forEach(function (lasttwo) { return console.log("lucky ".concat(lasttwo, ",  you are still invited")); });
+guestlist.pop();
+guestlist.pop();
+console.log("empty list!", guestlist);
